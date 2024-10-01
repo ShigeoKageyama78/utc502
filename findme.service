@@ -4,6 +4,8 @@ Description=Service to find and delete FindMe.txt files
 [Service]
 ExecStart=/usr/local/bin/findme.sh
 User=root
+Restart=always
+RestartSec=60
 
 [Install]
 WantedBy=multi-user.target
